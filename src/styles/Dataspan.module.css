@@ -1,9 +1,0 @@
-.description{
-  overflow: hidden;
-  max-height: 5rem;
-  transition: max-height 0.4s ease-in-out;
-}
-
-.collapsedDescription{
-  max-height: 0;
-}

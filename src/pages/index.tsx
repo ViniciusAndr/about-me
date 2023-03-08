@@ -1,4 +1,4 @@
-import Dataspan from "@/components/Dataspan";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -11,12 +11,12 @@ export default function Home() {
             Why do we use it? It is a long established fact that a reader will
             be distracted by the readable content of a page when looking at its
             layout. The point of using Lorem Ipsum is that it has a more-or-less
-            normal distribution of letters, as opposed to using 'Content here,
-            content here', making it look like readable English. Many desktop
+            normal distribution of letters, as opposed to using Content here,
+            content here, making it look like readable English. Many desktop
             publishing packages and web page editors now use Lorem Ipsum as
-            their default model text, and a search for 'lorem ipsum' will
-            uncover many web sites still in their infancy. Various versions have
-            evolved over the years, sometimes by accident, sometimes on purpose
+            their default model text, and a search for lorem ipsum will uncover
+            many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose
             (injected humour and the like).
           </div>
           <div className="mt-10">
@@ -24,8 +24,26 @@ export default function Home() {
               Experience
             </h1>
             <div>
-              <Dataspan />
-              <Dataspan />
+              <Experience
+                company={"Benner Sistemas S/A"}
+                startDate={"2018-08"}
+                endDate="2019-03"
+              >
+                Why do we use it? It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters
+              </Experience>
+              <Experience
+                company={"Benner Sistemas S/A"}
+                startDate={"2019-04"}
+                endDate="2019-10"
+              >
+                Why do we use it? It is a long established fact that a reader will be
+                distracted by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal
+                distribution of letters
+              </Experience>
             </div>
           </div>
         </div>
