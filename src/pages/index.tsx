@@ -1,7 +1,6 @@
+import Dataspan from "@/components/Dataspan";
 
 export default function Home() {
-
-
   return (
     <main className="flex w-full justify-center absolute mt-20 flex-col items-center">
       <div className="flex flex-col text-justify items-center">
@@ -21,7 +20,13 @@ export default function Home() {
             (injected humour and the like).
           </div>
           <div className="mt-10">
-            <h1 className="text-lg decoration-2 underline underline-offset-4">Experience</h1>
+            <h1 className="text-lg decoration-2 underline underline-offset-4">
+              Experience
+            </h1>
+            <div>
+              <Dataspan />
+              <Dataspan />
+            </div>
           </div>
         </div>
       </div>
