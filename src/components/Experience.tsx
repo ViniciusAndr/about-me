@@ -20,7 +20,7 @@ export default function Experience({
   return (
     <div className="min-w-0 h-auto">
       <div
-        className="flex gap-4 mt-4 hover:cursor-pointer"
+        className="flex gap-4 mt-4 hover:cursor-pointer align-middle"
         onClick={() => setOpen(!open)}
       >
         <span className="bg-gray-700 px-2 py-0.5 rounded-2xl">
