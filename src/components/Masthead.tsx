@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { If, Then } from "react-if";
 
 interface IMastheadProps {
   path: string;
@@ -23,16 +24,20 @@ export default function Masthead({ path }: IMastheadProps) {
     <div className="fixed z-10 w-full backdrop-blur">
       <div className="flex justify-center max-w-[25rem] ml-auto mr-auto">
         <div className="flex justify-between p-3 w-full px-0">
-          <Image
-            src={gitImg ?? ""}
-            width={40}
-            height={40}
-            alt={"Github account image"}
-            className="rounded-full cursor-pointer"
-            title="Go to Github page"
-            onClick={() =>
-              window.open("https://github.com/ViniciusAndr", "_blank")}
-          />
+          <div>
+            <If condition={gitImg}>
+              <Image
+                src={gitImg ?? ""}
+                width={40}
+                height={40}
+                alt={"Github account image"}
+                className="rounded-full cursor-pointer"
+                title="Go to Github page"
+                onClick={() =>
+                  window.open("https://github.com/ViniciusAndr", "_blank")}
+              />
+            </If>
+          </div>
           <div className="flex gap-7">
             <Link
               href="/"
