@@ -28,6 +28,7 @@ export default function Home() {
                 company={"Benner Sistemas S/A"}
                 startDate={"2018-08"}
                 endDate="2019-03"
+                stacks={["CSharp", ".NET Framework", "Delphi" ]}
               >
                 Why do we use it? It is a long established fact that a reader will be
                 distracted by the readable content of a page when looking at its layout.

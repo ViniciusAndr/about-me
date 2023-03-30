@@ -1,6 +1,6 @@
 .description {
   overflow: hidden;
-  max-height: 5rem;
+  max-height: 10rem;
   transition: max-height 0.1s ease-in-out;
 }
 
